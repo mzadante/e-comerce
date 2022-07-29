@@ -1,0 +1,86 @@
+.main__arrow{
+    padding: 0 0 0 0.5rem;
+}
+.main__line__Products{
+    display: flex;
+    flex-wrap: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: #AAE0E6;
+}
+.main__product{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #00000040;
+    border-radius: 0.2rem;
+    color: #000;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.main__product:hover{
+    transform: scale(1.050);
+    transition: 1.5s;
+}
+/*Esto aqui comentado es para redimencionar las imagenes de los productos*/
+/* .product__image{
+    width: 300px;
+    height: 300px;
+} */
+.product__title{
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+.product__price{
+    padding: 0rem 0.5rem 0.2rem 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.product__detail{
+    display: flex;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+.product__icon{
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+/*Menu section Two - contiene titulo de la categoria - productos*/
+.main__section__two{
+    display: flex;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 90%;
+    flex-direction: column;
+}
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+    .main__line__Products{
+        align-items: center;
+        flex-wrap: wrap;    
+    }
+    .main__product{
+        height: 15rem;
+        text-align: center;
+        width: 100px;
+        padding: .2rem;
+    }
+    .main__product:hover{
+        transform: scale(1.085);
+        transition: 1s;
+    }
+    .product__image{
+       width: 100px;
+    }
+    .product__title{
+        font-size: 0.9rem;
+        padding: 0%;
+    }
+    .product__price{
+        font-size: 1rem;
+    }
+    .product__detail{
+        font-size: 0.85rem;   
+    }
+}

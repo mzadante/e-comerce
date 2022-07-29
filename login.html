@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header/style-header.css">
+        <!--Seccion login css-->
+        <link rel="stylesheet" href="css/main/section-login/iniciar-sesion.css">
+        <link rel="stylesheet" href="css/main/section-baner/baner.css">
+        <link rel="stylesheet" href="css/main/section-principal/main-category.css">
+        <link rel="stylesheet" href="css/main/section-principal/main-products.css">
+        <link rel="stylesheet" href="css/footer/section-footer/footer.css">
+        <!--Link para el icono del title-->
+        <link rel="shortcut icon" href="./img/Logo-flower.png" type="image/x-icon">
+        <title>Sucu Art - Cactus & Suculentas</title>
+    </head>
+    <body class="base">
+        <!--Header Cabecera-->
+        <header class="container-header">
+            <div class="header__box_container">
+                <div class="container__img__h1__login">
+                    <div class="container__logo">
+                        <img class="header__img" src="img/logo-vivero.png" alt="Logo empresa"></img>
+                        <!--Aqui este h1 es para poner el titulo de la empresa no usado porque el logo tiene el titulo-->
+                        <h1 class="Texto_logo"></h1>
+                    </div>
+                    <div class="container__img__input__button">
+                        <div class="container__search_bar">
+                            <input class="header__input" type="search" placeholder="Que desea Buscar?">
+                            <button class="header__img__lupa"><a href="./index.html"><img src="./img/lupa.png" alt=""></a></button> 
+                            <a class="header__button__search" href="./index.html">Buscar</a>
+                        </div>
+                    </div>
+                    <div class="container__box__button">
+                    <a class="header__button__login" href="./index.html">Volver</a>
+                    </div>
+                </div>
+            </div> 
+        </header>
+        <main>
+            <section class="login">
+                <div class="login__container">
+                    <h1 class="login__form-title">Iniciar Sesión</h1>
+                    <form class="login__form" action="./productos.html">
+                        <input class="login__form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico">
+                        <input class="login__form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña">
+                        <button class="login__form-submit" type="submit" id="login">Ingresar</button>
+                    </form>
+                </div>
+            </section>
+    
+        </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <img class="footer__logo-img" src="./img/logo-vivero.png" alt="alurageek">
+                    <ul class="footer__list">
+                        <li class="footer__item-list"><a href="#">Quiénes somos</a></li>
+                        <li class="footer__item-list"><a href="#">Política de privacidad</a></li>
+                        <li class="footer__item-list"><a href="#">Programa de fidelidad</a></li>
+                        <li class="footer__item-list"><a href="#">Nuestras tiendas</a></li>
+                        <li class="footer__item-list"><a href="#">Franquicia</a></li>
+                        <li class="footer__item-list"><a href="#">Anuncie aquí</a></li>
+                    </ul>
+                    <div class="footer__form-box">
+                        <h3 class="footer__form-title">Hable con nosotros</h3>
+                        <form class="footer__form" action="">
+                            <label class="footer__form-label" for="name" >
+                                <p class="footer__form-field">Nombre:</p>
+                                <input class="footer__form-input" type="text" id="name" name="name" autocomplete="off" required>
+                            </label>
+                            <label class="footer__form-label" for="message">
+                                <p class="footer__form-field">Mensaje:</p>
+                                <textarea class="footer__form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                            </label>
+                            <button class="footer__form-submit" type="submit" id="submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__developed">
+                    <a href="https://mzadante.github.io/Portafolio/" target="_blank">Desarrollado por D.N. Martinez | mzadantemartinez@gmail.com 💻</a>
+                </div>
+            </footer> 
+        <script src="/service/admin-service.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+  "producto": [
+    {
+      "url": "./img/01_titanopsis.jpg",
+      "name": "Titanopsis",
+      "price": "$ 100,00",
+      "description": "poster",
+      "id":1
+    }
+  ]
+  
+}

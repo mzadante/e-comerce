@@ -1,0 +1,56 @@
+.add-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-product__container{
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+}
+.add-product__form-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+.add-product__form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+.add-product__form-label{
+    width: 100%;
+    font-weight: 700;
+}
+.add-product__form-field p{
+    padding: 0%;
+}
+.add-product__form-input{
+    background-color: #b4f5e1;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1rem;
+    padding: .5rem;
+    width: inherit;
+}
+.add-product__form-submit{
+    display: flex;
+    width: 10em;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: #a1b9f8;
+    border: 2px solid #a1b9f8;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+/*RESPONSIVE*/
+@media (max-width: 768px){
+    
+}

@@ -1,0 +1,60 @@
+.container__main__products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    background-image: url(../../../img/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.container__banner{
+    display: flex;
+    width: 80%;
+}
+.container__title__box{
+    display: flex;
+    flex-flow: column nowrap;
+    color: #fff;
+}
+.banner__title{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #00000080, -1px 1px 5px #00000080, 1px -1px 5px #00000080, -1px -1px 5px #00000080;
+}
+.banner__subtitle{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 5px #00000080, -1px 1px 5px #00000080, 1px -1px 5px #00000080, -1px -1px 5px #00000080;
+}
+.banner__button{
+    border: 2px solid #a1b9f8;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 10px #00000080;
+    background-color:#a1b9f8;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    outline: none;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 8rem;
+}
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+    .banner__title{
+        width: 80%;
+        font-size: 1.5rem;
+    }
+}

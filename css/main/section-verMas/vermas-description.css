@@ -1,0 +1,75 @@
+.main__shoping{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.main__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    gap: 16px;
+    width: 100%;
+}
+.description__container{
+    display: flex;
+    width: 45%;
+    height: 20rem;
+    align-items: center;
+    border: 2px solid #A0FAC5;
+    background: #A0FAC5;
+    padding: 0.5rem;
+}
+.description__image__container{
+    display: flex;
+    margin: 20px;
+    background-image: url(../../../img/03_ernestina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.description_info{
+    width: 100%;
+}
+.description__image{
+    width: 300px;
+    height: 300px;
+}
+.description_infoProduct{
+    line-height: 1.3rem;
+    padding: .5rem;
+}
+.description__Title{
+    color: #000;
+}
+.description__title__nameProduct{
+    color: #000;
+}
+.description__price{
+    color: #000;
+}
+.description__product{
+    color: #000;
+    font-size: 1rem;
+}
+/*RESPONSIVE*/
+@media (max-width: 768px){
+    .description__container{
+        width: 100%;
+        padding: 0%;
+    }
+    .description__image__container{
+        width: 100px;
+        
+    }
+    .description__image {
+        width: 100px;
+        height: 100Px;
+    }
+    .description__Title{
+        font-size: 1.3rem;
+    }
+    .description__title__nameProduct{
+        font-size: 1.2rem;
+    }
+}
