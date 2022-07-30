@@ -45,33 +45,33 @@
             <section class="add-product">
                 <div class="add-product__container">
                     <h1 class="add-product__form-title">Agregar nuevo producto</h1>
-                    <form class="add-product__form" action="">
+                    <form class="add-product__form" action="" data-form="">
                         <label class="add-product__form-label" for="product-name">
                             <p class="add-product__form-field">Nombre del producto:</p>
                             <input class="add-product__form-input" type="text" id="product-name" name="product-name"
-                                autocomplete="off" required>
+                                autocomplete="off" data-nombre="" required>
                         </label>
                         <label class="add-product__form-label" for="category">
                             <p class="add-product__form-field">Categoría:</p>
                             <input class="add-product__form-input" type="text" id="category" name="category"
-                                autocomplete="off" required>
+                                autocomplete="off" data-categoria="" required>
                         </label>
                         <label class="add-product__form-label" for="img">
                             <p class="add-product__form-field">URL de la imágen:</p>
-                            <input class="add-product__form-input" type="text" id="img" name="url" required>
+                            <input class="add-product__form-input" type="text" id="img" name="url" data-url="" required>
                         </label>
                         <label class="add-product__form-label" for="price">
                             <p class="add-product__form-field">Precio del producto:</p>
                             <div class="add-product__price-box">
                                 <span>$</span>
                                 <input class="add-product__form-input" type="number" id="price" name="price"
-                                    autocomplete="off" required>
+                                    autocomplete="off" data-price required>
                             </div>
                         </label>
                         <label class="add-product__form-label" for="description">
                             <p class="add-product__form-field">Descripción del producto:</p>
                             <textarea class="add-product__form-input" type="text" id="description" name="description"
-                                rows="5" autocomplete="off" required></textarea>
+                                rows="5" autocomplete="off" data-description="" required></textarea>
                         </label>
                         <button class="add-product__form-submit" type="submit" id="submit">Agregar producto</button>
                     </form>
@@ -113,7 +113,8 @@
                     mzadantemartinez@gmail.com 💻</a>
             </div>
         </footer>
-        <script src=""></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="./controller/registro.controller.js"></script>
     </body>
 
 </html>
