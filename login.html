@@ -46,8 +46,8 @@
                 <div class="login__container">
                     <h1 class="login__form-title">Iniciar Sesión</h1>
                     <form class="login__form" action="./productos.html">
-                        <input class="login__form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico">
-                        <input class="login__form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña">
+                        <input class="login__form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico" required>
+                        <input class="login__form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, una letra Mayúscula, un número y no puede contener caracteres especiales">
                         <button class="login__form-submit" type="submit" id="login">Ingresar</button>
                     </form>
                 </div>

@@ -2,12 +2,12 @@
 import { clientServices } from "../service/client-service.js";
 console.log(clientServices);
 //funcion que obtiene una url, nombre y precio y aplica el contenido de un modulo html en la pagina
-const crearNuevoProducto = (url,name,price) =>{
+const crearNuevoProducto = (url, name, price) => {
     //digo que voy a crear un elemento div
     const elemento = document.createElement('div');
     //el contenido del div
-    const contenido=
-    `<div class="main__product" >
+    const contenido =
+        `<div class="main__product" >
             <img class="product__image" src="${url}" alt="">
             <h4 class="product__title">${name}</h4>
             <p class="product__price">${price}</p>
@@ -21,11 +21,11 @@ const crearNuevoProducto = (url,name,price) =>{
     return elemento;
 }
 //creo una variable div donde voy a colocar el elemento segun su data atribute
-const div=document.querySelector("[data-product]");
+const div = document.querySelector("[data-product]");
 
 //con la funcion listaProductos obtenemos data
-clientServices.listaProductos().then((data) =>{
-    data.forEach( producto => {
+clientServices.listaProductos().then((data) => {
+    data.forEach(producto => {
         //llamo a crear el elemento url name y price
         const productoNuevo = crearNuevoProducto(producto.url, producto.name, producto.price);
         div.appendChild(productoNuevo);

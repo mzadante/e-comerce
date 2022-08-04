@@ -11,7 +11,6 @@ const crearProducto =(url,name,price,description) => {
         },
         body:JSON.stringify({url,name,price,description, id: uuid.v4()})
     })
-
 }
 
 export const clientServices={
